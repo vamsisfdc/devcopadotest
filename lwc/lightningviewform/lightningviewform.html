@@ -1,0 +1,29 @@
+<template>
+    <!-- <lightning-card> 
+<lightning-card title="view">
+    <lightning-record-view-form record-id={recordId} object-api-name="Account">
+        <lightning-output-field field-name="Name"></lightning-output-field>
+    </lightning-record-view-form>
+<lightning-record-edit-form record-id={recordId} object-api-name="Account"  layout-type="Full" mode="view">
+<lightning-input-field field-name="Name"></lightning-input-field>
+<lightning-input-field field-name="type"></lightning-input-field>
+<lightning-button label="Edit here" onclick={hit}> </lightning-button>
+</lightning-record-edit-form>
+<lightning-record-form record-id={recordId} object-api-name="Account" layout-type="Full" mode="edit">
+<lightning-card>
+    <lightning-input label="name" type="Search" l></lightning-input>
+</lightning-card>
+</lightning-record-form>
+</lightning-card>   -->
+<lightning-card class="slds-var-m-around__medium">
+<lightning-record-form
+    record-id={recordId}
+    object-api-name={objectApiName}
+    fields={fields}
+    columns="2"
+    mode="edit"
+    onsubmit={handleSubmit}
+>
+</lightning-record-form>
+</lightning-card>
+</template>
